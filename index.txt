@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hưng Việt Architecture</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; color:#222; }
+    header {
+      position:fixed; top:0; width:100%;
+      background:rgba(255,255,255,0.95);
+      display:flex; justify-content:space-between;
+      align-items:center; padding:20px 60px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      z-index:1000;
+    }
+    header nav a {
+      margin-left:30px; text-decoration:none; color:#333;
+      font-weight:500;
+    }
+    .hero {
+      height:100vh;
+      background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+      display:flex; align-items:center; justify-content:center;
+      text-align:center; color:white;
+      position:relative;
+    }
+    .hero::after{
+      content:""; position:absolute; inset:0;
+      background:rgba(0,0,0,0.6);
+    }
+    .hero-content{
+      position:relative; z-index:2;
+      max-width:800px;
+    }
+    .hero h1{ font-size:48px; margin-bottom:20px; }
+    .hero p{ font-size:20px; margin-bottom:30px; }
+    .btn{
+      padding:14px 30px;
+      background:#fff; color:#000;
+      border:none; cursor:pointer;
+      font-weight:bold;
+    }
+    section{ padding:100px 60px; }
+    .container{ max-width:1200px; margin:auto; }
+    .grid{ display:grid; gap:40px; }
+    .grid-2{ grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+    .grid-3{ grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+    .card{
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      border-radius:12px; overflow:hidden;
+    }
+    .card img{ width:100%; height:200px; object-fit:cover; }
+    .card div{ padding:20px; }
+    .dark{
+      background:#111; color:white; text-align:center;
+    }
+    footer{
+      background:#000; color:white;
+      text-align:center; padding:30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>HƯNG VIỆT</strong></div>
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#projects">Dự án</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>KIẾN TẠO GIÁ TRỊ BỀN VỮNG</h1>
+    <p>Đơn vị tư vấn – thiết kế – thi công công trình kiến trúc chuyên nghiệp</p>
+    <button class="btn">Xem Hồ Sơ Năng Lực</button>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container grid grid-2">
+    <div>
+      <h2>Về Hưng Việt</h2>
+      <p style="margin-top:20px; line-height:1.6;">
+        Công ty Cổ phần Tư vấn Đầu tư và Thương mại Hưng Việt hoạt động trong lĩnh vực tư vấn thiết kế,
+        quản lý dự án và thi công công trình. Chúng tôi định hướng phát triển theo tiêu chuẩn chuyên nghiệp,
+        minh bạch và bền vững.
+      </p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" style="width:100%; border-radius:12px;">
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="background:#f5f5f5;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:60px;">Dự Án Tiêu Biểu</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486308510493-aa64833637b4">
+        <div>
+          <h3>Biệt thự cao cấp</h3>
+          <p>Thiết kế hiện đại – tối ưu công năng.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486308510493-aa64833637b4">
+        <div>
+          <h3>Văn phòng thương mại</h3>
+          <p>Giải pháp bền vững – hiệu quả đầu tư.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486308510493-aa64833637b4">
+        <div>
+          <h3>Trường học tư thục</h3>
+          <p>Không gian sáng tạo – an toàn – thẩm mỹ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="container">
+    <h2>Liên Hệ Hợp Tác</h2>
+    <p style="margin-top:30px;">Địa chỉ: Số 3 ngõ 527 Đường Hồng Hà, Hà Nội</p>
+    <p>Điện thoại: 0904 181 585</p>
+    <p>Email: vanlt@hungvietjsc.com.vn</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Công ty Cổ phần Tư vấn Đầu tư và Thương mại Hưng Việt
+</footer>
+
+</body>
+</html>
