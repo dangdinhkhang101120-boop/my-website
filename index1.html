@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CÔNG TY HƯNG VIỆT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    transition:0.4s;
+}
+
+header.scrolled{
+    background:#0a1f33;
+    padding:15px 80px;
+}
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#d4af37;
+    color:#000;
+    padding:12px 30px;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 80px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#0a1f33;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-box{
+    background:#f5f5f5;
+    padding:40px;
+    text-align:center;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.service-box:hover{
+    background:#0a1f33;
+    color:#fff;
+}
+
+.service-box h3{
+    margin-bottom:15px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact{
+    background:#0a1f33;
+    color:#fff;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact button{
+    width:100%;
+    padding:12px;
+    background:#d4af37;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#fff;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header{
+        padding:20px;
+    }
+    section{
+        padding:80px 20px;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+    <div class="logo">HƯNG VIỆT</div>
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>CÔNG TY TNHH HƯNG VIỆT</h1>
+        <p>Thiết kế kiến trúc – Thi công xây dựng – Giải pháp toàn diện</p>
+        <a href="#contact" class="btn">Liên hệ ngay</a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-title">
+        <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
+        <p>Giải pháp chuyên nghiệp – Uy tín – Chất lượng</p>
+    </div>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>Thiết kế kiến trúc</h3>
+            <p>Thiết kế nhà phố, biệt thự, văn phòng hiện đại và sang trọng.</p>
+        </div>
+        <div class="service-box">
+            <h3>Thi công xây dựng</h3>
+            <p>Thi công trọn gói với quy trình chuyên nghiệp và kiểm soát chất lượng nghiêm ngặt.</p>
+        </div>
+        <div class="service-box">
+            <h3>Nội thất</h3>
+            <p>Giải pháp nội thất cao cấp tối ưu công năng và thẩm mỹ.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="section-title">
+        <h2>DỰ ÁN TIÊU BIỂU</h2>
+        <p>Những công trình đã thực hiện</p>
+    </div>
+
+    <div class="projects">
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+        </div>
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="">
+        </div>
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>LIÊN HỆ HƯNG VIỆT</h2>
+        <p>Chúng tôi sẵn sàng tư vấn miễn phí</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Số điện thoại">
+        <textarea rows="5" placeholder="Nội dung"></textarea>
+        <button type="submit">Gửi liên hệ</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 CÔNG TY HƯNG VIỆT. All Rights Reserved.
+</footer>
+
+<script>
+window.addEventListener("scroll", function(){
+    var header = document.getElementById("header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
